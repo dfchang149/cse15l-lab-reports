@@ -3,7 +3,10 @@
 
 [My Repository](https://github.com/dfchang149/cse15l-lab-reports)
 
+[Lab Report 1](https://dfchang149.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
+
 > Testing List
+
 * 1
 * 2
 * 3
