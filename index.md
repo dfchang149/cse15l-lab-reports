@@ -27,8 +27,3 @@ System.out.println("Hello World!");
 ---
 
 >This is a recent change!
----
-## Part 3
-
-
-![Image](lab1week2.png)
