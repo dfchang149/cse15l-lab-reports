@@ -6,7 +6,7 @@
 
 ---
 ## **Steps:**
----
+
 
 ### 1: Installing `VScode`
 
