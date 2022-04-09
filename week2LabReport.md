@@ -27,9 +27,7 @@
     > This is where you'll run your commands in order to remote access
 
 * Now, to actually start the process, we'll need to use the `ssh` command.
-    This will allow us to connect to the ieng6 server for our courses
-    
-    We'll run the command by typing:
+    This will allow us to connect to the ieng6 server for our courses. We'll run the command by typing:
     `ssh cs15lsp22<username>@ieng6.ucsd.edu`
     
     > **Important:** Make sure to replace `<username>` with your actual course username.
@@ -57,8 +55,6 @@
 
     For instance, it tells me that my current working directory is `/home/linux/ieng6/cse15lsp22/sp15lsp22aea`
     
-    <br>
-
     > Here is a [list](http://mally.stanford.edu/~sr/computing/basic-unix.html) of commands you can try out for yourself
 
 
@@ -94,7 +90,7 @@
 
 * Once you've created the key, a small ascii image will appear:
 
-    >![Image](Images/sshKeyGenP1.png)
+    ![Image](Images/sshKeyGenP1.png)
 
 &nbsp;
 ## **6)** Optimizing Remote Running
