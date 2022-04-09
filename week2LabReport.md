@@ -4,8 +4,7 @@
 **Topic:** Remote Accessing
 
 ---
-## **Steps:**
-&nbsp;
+# **Steps:**
 
 ## **1)** Installing VScode
 
@@ -111,8 +110,6 @@
     ![Image](Images/sshKeyGenP2.png)
 
     > Notice how it doesn't ask for the password after running `ssh`
-
-&nbsp;
 
 &nbsp;
 # The End
