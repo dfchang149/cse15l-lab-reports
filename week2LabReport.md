@@ -1,15 +1,13 @@
 # Week 2 Lab Report
 
-> Due April 10, 2022
-
-> **Topic:** Remote Accessing
+> Due April 10, 2022 <br>
+**Topic:** Remote Accessing
 
 ---
 &nbsp;
 ## **Steps:**
 
-
-## 1: Installing `VScode`
+## **1)** Installing `VScode`
 
 * Before we can even remotely access your course-specific accounts, we need to download [VScode](https://code.visualstudio.com/download)
 * When you get to the download page, you should download the installer meant for your operating system (Likely Windows)
@@ -18,7 +16,7 @@
 
 
 &nbsp;
-## 2: Remotely Connecting
+## **2)** Remotely Connecting
 
 * Now that we've installed VScode, we need to open it up and create a new terminal through the top bar
 
@@ -39,7 +37,7 @@
 
 * After you run the command successfully, it'll ask you for your password, so just type in your course-specific password.
     
-    > Keep in mind that it won't show any indication of your input as you type (for the purpose of being secure); however, that doesn't mean you're not typing anything.
+    > Be aware that it won't show any indication of your input as you type; however, that doesn't mean you're not typing anything.
 
     > It might also ask for your password several times as well, so just keep retyping your password until it works.
 
@@ -50,11 +48,11 @@
 
 
 &nbsp;
-## 3: Trying Some Commands
+## **3)** Trying Some Commands
 
 * Now that we've successfully accessed the server through a remote `ssh` connection, there are some commands we can run.
 
-* One such command is `pwd`, which prints out your current working directory:
+* For example, there's a command called `pwd`, which prints out your current working directory:
 
     ![Image](pwdCommand.png)
 
@@ -64,13 +62,22 @@
 
 
 &nbsp;
-## 4: Moving Files with `scp`
+## **4)** Moving Files with `scp`
 
-
-
-&nbsp;
-## 5: Setting up an `SSH key`
+* Having tried some commands on your own, it's time to learn how to copy files between the server and your local computer
 
 
 &nbsp;
-## 6: Optimizing Remote Running
+## **5)** Setting up an `SSH key`
+
+* You might have noticed that you are asked for a password everytime you remotely access the server. This can be tedious, hence we have a solution, which is to create an `SSH key`
+* By creating a key on your local computer and copying it over to the server, you'll be able have remote access without the need of typing in your password every single time
+
+    > For this step, we'll only **create** the `SSH key`
+
+&nbsp;
+## **6)** Optimizing Remote Running
+
+* Now that we've created the key, we just need to copy it over to the server
+
+* We can do that by running the commands below:
