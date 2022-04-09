@@ -2,4 +2,4 @@
 
 > Practice screenshotting
 
-![Image](lab1week2.png)
+![Image](Images/lab1week2.png)
