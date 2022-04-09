@@ -106,9 +106,11 @@
 
 * Finally, we can now run the `ssh` command one last time, and if everything has been done correctly, you'll no longer be asked for your password.
 
-    > Here's an example:
-    <br>
-    ![Image](Images/sshKeyGenP1.png)
+    Here's an example:
+
+    ![Image](Images/sshKeyGenP2.png)
+
+    > Notice how it doesn't ask for the password after running `ssh`
 
 &nbsp;
 
