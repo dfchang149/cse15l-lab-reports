@@ -8,7 +8,7 @@
 
 ## **1)** Installing VScode
 
-* Before we can remotely access your course-specific accounts, we need to download [VScode](Images/https://code.visualstudio.com/download)
+* Before we can remotely access your course-specific accounts, we need to download [VScode](https://code.visualstudio.com/download)
 * When you get to the download page, you should download the installer meant for your operating system (Likely Windows)
 
     ![Image](Images/downloadVSC.png)
@@ -59,7 +59,7 @@
     
     <br>
 
-    > Here is a [list](Images/http://mally.stanford.edu/~sr/computing/basic-unix.html) of commands you can try out for yourself
+    > Here is a [list](http://mally.stanford.edu/~sr/computing/basic-unix.html) of commands you can try out for yourself
 
 
 &nbsp;
