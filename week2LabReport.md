@@ -79,6 +79,8 @@
 &nbsp;
 ## **5)** Setting up an `SSH key`
 
+### Part 1:
+
 * You might have noticed that you are asked for a password everytime you remotely access the server. This can be tedious, hence we have a solution, which is to create an `SSH key`
 * By creating a key on your local computer and copying it over to the server, you'll be able have remote access without the need of typing in your password every single time
 
@@ -92,8 +94,7 @@
 
     ![Image](Images/sshKeyGenP1.png)
 
-&nbsp;
-## **6)** Optimizing Remote Running
+### Part 2:
 
 * Now that we've created the key, we just need to copy it over to the server in order to make remote accessing much easier 
 
@@ -106,6 +107,17 @@
     ![Image](Images/sshKeyGenP2.png)
 
     > Notice how it doesn't ask for the password after running `ssh`
+
+&nbsp;
+## **6)** Optimizing Remote Running
+
+* Now that we've set up our `ssh key`, we can easily save time when running commands through the server
+
+* For example, we can run a command on the server and exit right after an `ssh` command by surrounding the command in quotes like so:
+    
+    ![Image](Images/optimizedSSH.png)
+
+    > Notice how I'm still on my local computer after running the command `ls` on the server.
 
 &nbsp;
 # The End
