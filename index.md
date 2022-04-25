@@ -6,6 +6,7 @@
 
 Lab reports:
 * [Week 2 Lab Report](https://dfchang149.github.io/cse15l-lab-reports/week2LabReport.html)
+* [Week 4 Lab Report](https://dfchang149.github.io/cse15l-lab-reports/week4LabReport.html)
 
 Other:
 
