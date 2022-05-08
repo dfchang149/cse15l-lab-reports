@@ -51,9 +51,41 @@
 &nbsp;
 ## Setup Github Access from ieng6
 
-* Code Diff
+* If you've used git commands on server accounts, you may have noticed by now that you can't use `git commit` and `git push`. This is because github requires token authentication when using these commands.
+
+* However, if we set up ssh keys between our remote account and github, we'll be able to call these commands easily.
+
+* To start this process, we first need to create an ssh key on our remote account like so using the command `ssh-keygen`
+
 
 &nbsp;
 ## Copy whole directories with `scp -r`
 
-* 
+* It's important to learn how to copy directories from your local computer to a remote account. For this tutorial specifically, I will copying a directory over to my `ieng6` account and compiling the tests inside it.
+
+* The first step is to copy a directory remotely by running said command:
+    > `scp -r . cs15lsp22<user>@ieng6.ucsd.edu:~/markdown-parse`
+
+* What this does, is it copys everything in my current directory, represented by the "`.`", to my remote `ieng6` account.
+
+* This is an example of what it looks like:
+
+    ![Image](Images/scpCopyDirectory.png)
+
+* After that, I can `ssh` onto my remote account and run the tests inside like so:
+
+    ![Image](Images/markdownParseTests.png)
+
+    > Keep in mind that I had a `makefile` inside, which allowed me to call `make test` in order to compile and run the tests
+
+* Now we know how to both copy and compile a directory, let's try doing it all in one line!
+
+    ```t
+        scp -r . cs15lsp22aea@ieng6.ucsd.edu:~/markdown-parse; ssh ieng6 "cd markdown-parse; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
+    ```
+
+    > Just make sure to use your username in place of mine
+
+ * Here's an example of what it looks like:
+ 
+    ![Image](Images/copyAndCompileMarkdownParse.png)
