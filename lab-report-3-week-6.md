@@ -51,12 +51,56 @@
 &nbsp;
 ## Setup Github Access from ieng6
 
-* If you've used git commands on server accounts, you may have noticed by now that you can't use `git commit` and `git push`. This is because github requires token authentication when using these commands.
+* If you've used git commands on remote accounts, you may have noticed by now that you can't use `git commit` and `git push`. This is because github requires token authentication when using these commands.
 
 * However, if we set up ssh keys between our remote account and github, we'll be able to call these commands easily.
 
 * To start this process, we first need to create an ssh key on our remote account like so using the command `ssh-keygen`
 
+    > Make sure to do this on the server, not your local computer
+
+* After you've generated the key, locate its directory in your remote account. Here's an example of me doing that:
+
+    ![Image](Images/remoteSshKey.png)
+
+* You'll notice `id_rsa` and `id_rsa.pub`, which happen to be the private and public keys, respectively.
+
+* What we want to do is copy the contents of the public key, `id_rsa.pub` to github. But, before we do that, we need to add our `ssh key` to the `ssh-agent`. We can do this by running these commands:
+
+    ```git-bash
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa
+    ```
+
+* Now that we've added our key to the `ssh-agent`, you'll need to go to your github account settings, where you'll find the option "`SSH and GPG keys`."
+
+    ![Image](Images/githubSettingsSSH.png)
+
+* Once you find it, just use the command `cat id_rsa.pub` and copy over the contents of the `public ssh key` to github.
+
+* Once you do, you should have a `ssh key` on github like so:
+
+    ![Image](Images/github_sshKey.png)
+
+* Now that we have our github ssh key, let's practice using the git commands `git commit` and `git push`
+
+* To test this, I'll create a new file called `file.txt` using the command `touch file.txt`. After that I'll add it to github using `git add file.txt`. The commands are as followed:
+
+    ```
+    touch file.txt
+    git add file.txt
+    ```
+* Now that we've added `file.txt`, it's time to commit and push it. This is the result after committing and pushing:
+
+    Commit:
+    ![Image](Images/gitCommit.png)
+
+    Push:
+    ![Image](Images/gitPush.png)
+
+* As proof, this is the resulting [commit](https://github.com/dfchang149/markdown-parser/commit/d1584df0a6f45f7ea92a1bc29cc3ac59be6f155a):
+
+    ![Image](Images/githubCommitAndPushed.png)
 
 &nbsp;
 ## Copy whole directories with `scp -r`
@@ -87,5 +131,5 @@
     > Just make sure to use your username in place of mine
 
  * Here's an example of what it looks like:
- 
+
     ![Image](Images/copyAndCompileMarkdownParse.png)
