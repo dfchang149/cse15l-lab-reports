@@ -43,9 +43,16 @@
 
 * As an example, I can run this command below to copy a file named `index.md` to my remote `ieng6` account
 
-```powershell
+    ```powershell
     scp index.md ieng6:/home/linux/ieng6/cs15lsp22/cs15lsp22aea
-```
+    ```
+
+
+* Here's an example of how it looks for me:
+
+    ![Image](Images/scpAlias.png)
+
+    > Notice how `index.md` now appears in the directory of my ieng6 account.
 
 
 &nbsp;
