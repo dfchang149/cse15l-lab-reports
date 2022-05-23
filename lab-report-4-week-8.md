@@ -47,7 +47,7 @@
     
     **3)** Is there a small code change (<10 lines) I could make to fix similar cases to `snippet 3`?
 
-    > For snippet 3, I believe I fix it under 10 lines. I think I would just need to trim the links so that they don't include new lines or `\n`. After that, if there happened to be another starting bracket before the end parenthesis, then the link won't be retrieved (ex: "github.com"). 
+    > For snippet 3, I believe I could fix it under 10 lines. I think I would just need to trim the links so that they don't include new lines or `\n`. After that, if there happened to be another starting bracket before the end parenthesis, then the link won't be retrieved (ex: "github.com"). 
 
 ## **Another Implementation:**
 
